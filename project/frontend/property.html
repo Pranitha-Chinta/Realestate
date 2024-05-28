@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rentify</title>
+</head>
+<body>
+  <!-- Seller Flow -->
+  <h2>Seller Flow</h2>
+  <form id="propertyForm">
+    <input type="text" id="place" placeholder="Place" required><br>
+    <input type="text" id="area" placeholder="Area" required><br>
+    <input type="number" id="bedrooms" placeholder="Bedrooms" required><br>
+    <input type="number" id="bathrooms" placeholder="Bathrooms" required><br>
+    <label for="hospitals">Near Hospitals:</label>
+    <input type="checkbox" id="hospitals" name="hospitals"><br>
+    <label for="colleges">Near Colleges:</label>
+    <input type="checkbox" id="colleges" name="colleges"><br>
+    <button type="submit">Post Property</button>
+  </form>
+
+  <h3>Your Properties</h3>
+  <ul id="propertiesList"></ul>
+
+  <!-- Buyer Flow -->
+  <h2>Buyer Flow</h2>
+  <h3>Available Properties</h3>
+  <ul id="buyerPropertiesList"></ul>
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="frontend.js"></script>
+</body>
+</html>
